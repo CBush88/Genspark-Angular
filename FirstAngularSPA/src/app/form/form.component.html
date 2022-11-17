@@ -1,0 +1,26 @@
+<div>
+    <h5>Person table</h5>
+    <p>Enter a first name, last name, and age to append to the table</p>
+        <form (ngSubmit)="onSubmit(firstName, lastName, age)">
+        <div class="form-group row">
+        <span class="form-group col-4">
+            <label for="firstName" class="">First Name: </label>
+            <input ngModel #firstName="ngModel" class="input-control" type="text" id="firstName" name="firstName">
+        </span>
+
+        <span class="form-group col-4">
+            <label for="lastName" class="">Last Name: </label>
+            <input ngModel #lastName="ngModel" class="input-control" type="text" id="lastName" name="lastName">
+        </span>
+
+        <span class="form-group col">
+            <label for="age" class="">Age: </label>
+            <input ngModel #age="ngModel" class="input-control" type="number" name="age" id="age">
+        </span>
+    </div>
+    <br>
+    <input class="btn btn-sm btn-success" type="submit" value="Add Name">
+    <br>
+    <br>
+    </form>
+</div>
