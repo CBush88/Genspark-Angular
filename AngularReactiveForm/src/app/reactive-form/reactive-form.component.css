@@ -1,0 +1,18 @@
+.errLabel {
+    margin-left: 2em;
+    color: red;
+    padding-left:4em;
+}
+
+.heading {
+    padding-top:.5em;
+}
+
+input {
+    margin-top: 4px;
+    margin-right:2em;
+}
+
+input.ng-invalid.ng-touched {
+    border: 2px solid red;
+}
