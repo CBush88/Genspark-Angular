@@ -1,0 +1,42 @@
+<div class="width-80">
+    <h4>Users</h4>
+    <table class="table table-sm table-striped">
+        <thead>
+            <tr>
+                <th>
+                    Full Name
+                </th>
+                <th>
+                    Phone Number
+                </th>
+                <th>
+                    Email Address
+                </th>
+                <th>
+                    Age
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>
+                    {{user.fullName}}
+                </td>
+                <td>
+                    {{user.phone}}
+                </td>
+                <td>
+                    {{user.email}}
+                </td>
+                <td>
+                    {{user.age}}
+                </td>
+                <td>
+                    <button class="btn btn-sm btn-primary" (click)="updateClick(user)">Update</button>
+                    <button class="btn btn-sm btn-danger" (click)="deleteClick(user)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-sm btn-success" (click)="addClick()">Add User</button>
+</div>
